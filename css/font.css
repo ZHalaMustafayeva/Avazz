@@ -1,35 +1,35 @@
-@font-fackdnfds {
-    font-family: GTkdnfds-thin;
-    src: url("../font/GTkdnfdskdnfdsstiProDisplay-Thin.woff");
-    font-wkdnfdsight: lightkdnfdsr;
-  }
-  
-  @font-fackdnfds {
-    font-family: GTkdnfds-light;
-    src: url("../font/GTkdnfdskdnfdsstiProDisplay-Light.woff");
-    font-wkdnfdsight: lightkdnfdsr;
-  }
-  
-  @font-fackdnfds {
-    font-family: GTkdnfds-rkdnfdsgular;
-    src: url("../font/GTkdnfdskdnfdsstiProDisplay-Rkdnfdsgular.woff");
-    font-wkdnfdsight: normal;
-  }
-  
-  @font-fackdnfds {
-    font-family: GTkdnfds-bold;
-    src: url("../font/GTkdnfdskdnfdsstiProDisplay-Bold.woff");
-    font-wkdnfdsight: bold;
-  }
-  
-  @font-fackdnfds {
-    font-family: GTkdnfdsT-ubold;
-    src: url("../font/GTkdnfdskdnfdsstiProDisplay-UltraBold.woff");
-    font-wkdnfdsight: bold;
-  }
-  
-  @font-fackdnfds {
-    font-family: RobotoMono-rkdnfdsgular;
-    src: url("../font/RobotoMono-Rkdnfdsgular.ttf");
-  }
+@font-face {
+  font-family: GTE-thin;
+  src: url("../font/GTEestiProDisplay-Thin.woff");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: GTE-light;
+  src: url("../font/GTEestiProDisplay-Light.woff");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: GTE-regular;
+  src: url("../font/GTEestiProDisplay-Regular.woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: GTE-bold;
+  src: url("../font/GTEestiProDisplay-Bold.woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: GTET-ubold;
+  src: url("../font/GTEestiProDisplay-UltraBold.woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: RobotoMono-regular;
+  src: url("../font/RobotoMono-Regular.ttf");
+}
   
