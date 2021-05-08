@@ -16,7 +16,6 @@
 .fixed{
     background-color: #fff !important;
     transition: .2s;
-
     box-shadow: 0 5px 10px 0 #3d3d3d1f;
 }
 .fixed nav ul .nav-item .nav-link:not(.nav-btn){
@@ -25,6 +24,7 @@
 .fixed nav .collapse .social-icons>ul li a i{
     color: #000;
 }
+
 .fixed .flags{    
     left: 20%;
     top: 17%;
@@ -35,9 +35,7 @@
 .fixed .social-icons{
     display: none;
 }
-.fixed img{
-    height: 80px;
-}
+
 .fixed .flags img{
     width: 27px;
     height: 27px;
@@ -401,7 +399,7 @@ header{
     font-size: 30px;
 }
 .owl-prev{
-    left: 0;
+    left: -7px;
     transform: translateX(-50%);
 }
 .owl-next{
@@ -409,7 +407,7 @@ header{
     transform: translateX(50%);
 }
 .owl-item{
-    padding:0 30px;
+    padding:0 10px;
 }
         /* Superiority */
 
@@ -767,7 +765,8 @@ textarea{
         left: 0;
         height: 90vh;
         background-color: rgba(0, 0, 0, 0.37);
-        transform: translateX(200%);
+        opacity: 0;
+        visibility: hidden;
         top: 87px;
         z-index: -1;
     }
@@ -894,7 +893,7 @@ textarea{
         height: 50vh;
     }
     #about{
-        padding: 100px 0;
+        padding:0 0 80px 0;
     }
     #services .container{
         padding-left: 0 !important;
@@ -921,9 +920,8 @@ textarea{
     .footer-phone{
         margin: 10px 0;
     }
-    
     .owl-prev{
-        left: 15px;
+        left: -10px;
     }
     .owl-next{
         right: 15px;
@@ -934,6 +932,12 @@ textarea{
     .footer-mail p{
         margin-left: 4px !important;
     }
+    .call-text{
+        width: 62%;
+    }
+    .about-text h2{
+        font-size: 30px;
+    }
 }
 @media only screen and (max-width:425px){
     .about-text{
@@ -943,13 +947,10 @@ textarea{
         left: 80%;
     }
     .owl-prev{
-        left: 25px;
+        left: -7px;
     }
     .carousel-text h1{
         padding-bottom: 4px;
-    }
-    #about{
-        padding: 80px 0;
     }
     .slider-text{
         padding: 25px;
@@ -970,9 +971,6 @@ textarea{
     }
     .carousel-text h3{
         font-size: 20px;
-    }
-    .about-text h2{
-        font-size: 37px;
     }
     .slider-text{
         padding: 32px;
