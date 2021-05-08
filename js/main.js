@@ -90,9 +90,16 @@ $(document).ready(function () {
               transform:'translateX(0)',
                 transition:'.5s'
             });
-           
+            $('.humb').css({
+                'background-color':'black',
+                'border':'1px solid black'
+            })
         }
         else{
+            $('.humb').css({
+                'background-color':'white',
+                'border':'1px solid white'
+            })
             $('header').css('background','transparent')
             $('.mobile-overlay').css({
                 transform:'translateX(200%)',
@@ -106,12 +113,21 @@ $(document).ready(function () {
         }
     })
     $(".mobile-overlay").click(function () {
+        $('header').css('background','transparent')
+        $('.humb').css({
+            'background-color':'black',
+            'border':'1px solid black'
+        })
         $('.hamburger-menu').removeClass('active-humb');
         $('.mobile-overlay').css({
             transform:'translateX(200%)',
               transition:'.5s'
           });
-        $('.mobile-menu').animate({ transform: 'translateX(200%)' }, 500, 'linear');
+        $('.mobile-menu').css({
+            transform:'translateX(200%)',
+              transition:'.5s'
+          });
+          
       });
 
  

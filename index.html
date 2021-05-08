@@ -22,9 +22,9 @@
         <img src="img/fake-lgo.png" alt="">
       </a>
       <div class="hamburger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span class="humb"></span>
+        <span class="humb"></span>
+        <span class="humb"></span>
       </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="flags">
@@ -63,25 +63,38 @@
             <li class="nav-item">
               <a class="nav-link " href="#">Əlaqə</a>
             </li>
-            <li class="nav-item" data-toggle="modal" data-target="#exampleModalCenter">
-              <a class="nav-link nav-btn">Pulsuz müayinə</a>
+            <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <a class="nav-link nav-btn ">Pulsuz müayinə</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-      <div class="mobile-overlay">
+      
         <div class="mobile-menu">
+          <div class="mobile-flags">
+            <div class="az">
+              <img src="img/az-flag.png"  alt="">
+            </div>
+            <div class="ru">
+              <img src="img/rus-flag.png" alt="">
+            </div>
+            <div class="en">
+              <img src="img/en-flag.png" alt="">
+            </div>
+          </div>
           <ul>
             <li><a href="">Haqqımızda</a></li>
             <li><a href="">Eşitmə cihazları</a></li>
             <li><a href="">Xidmətlər</a></li>
             <li><a href="">Zəmanət və keyfiyyət</a></li>
             <li><a href="">Əlaqə</a></li>
-            <li><a href="">Pulsuz müayinə</a></li>
+            <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <a class="nav-link nav-btn ">Pulsuz müayinə</a>
+            </li>
           </ul>
         </div>
-      </div>
+        <div class="mobile-overlay"></div>
   </header>
 
   <!-- Carousel -->
@@ -494,13 +507,13 @@
       </div>
   </section>
   <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-body">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Qiymət təklifi al</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h5 class="modal-title" id="exampleModalLongTitle">Pulsuz müayinə</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                   X
                 </button>
               </div>
@@ -516,11 +529,13 @@
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="https://kit.fontawesome.com/187d954b3d.js" crossorigin="anonymous"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/popper.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="https://kit.fontawesome.com/187d954b3d.js" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 
