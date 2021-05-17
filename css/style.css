@@ -13,6 +13,21 @@
     display: flex;
     align-items: center;
 }
+.white{
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+.filter{
+    filter:none
+}
+.grayscale{
+    filter: grayscale(100) brightness(100) ;
+
+}
+.black{
+    background-color: #000;
+    border: 1px solid #000;
+}
 .fixed{
     background-color: #fff !important;
     transition: .2s;
@@ -24,9 +39,12 @@
 .fixed nav .collapse .social-icons>ul li a i{
     color: #000;
 }
+.fixed .navbar-brand img{
+    width: 160px;
+}
 
 .fixed .flags{    
-    left: 20%;
+    left: 0;
     top: 17%;
 }
 .fixed .collapse{
@@ -137,7 +155,7 @@ header{
     height: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0,.1);
+    background-color: rgba(0, 0, 0,.43);
     z-index: 1;
 }
 .carousel-indicators{
@@ -171,7 +189,7 @@ header{
     left: 0;
     right: 0;
     margin: auto;
-    background: #96F242;
+    background: rgb(213 0 0);
     -webkit-transition: width, 0.2s;
     transition: width, 0.2s;
 }
@@ -180,11 +198,15 @@ header{
     transform: scale(1);
 }
 .nav-item .nav-btn{
-    background-color: rgb(75, 168, 46);
+    background-color: rgb(213 0 0);
     padding:10px 30px !important;
     border-radius: 40px;
     font-family: GTE-bold;
     cursor: pointer;
+    transition: .3s;
+}
+.nav-item .nav-btn:hover{
+    background-color: rgb(160 7 7);
 }
 .carousel-indicators [data-bs-target] {
     width: 7px !important;
@@ -225,9 +247,9 @@ header{
 }
 .carousel-text a{
     padding:11px 57px;
-    background-color: rgb(75, 168, 46);
+    background-color: rgb(213 0 0);
     border-radius: 24px;
-    box-shadow: rgb(75 168 46 / 30%) 0px 4px 8px;
+    box-shadow: rgb(109 6 6) 0px 4px 8px;
     color: #fff;
     transition: .3s;
     width: auto;
@@ -236,7 +258,7 @@ header{
 }
 .carousel-text a:hover{
     color: #fff;
-    background-color: rgb(70, 158, 43);
+    background-color: rgb(160 7 7);
 }
 .carousel-icon{
     width: 40px;
@@ -316,6 +338,11 @@ header{
     font-size: 1.25rem;
     margin-bottom:36px;
 }
+.about-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .about-text a{
     background-color: #8bbc07;
     color: #fff;
@@ -344,7 +371,7 @@ header{
     padding:15px 0
 }
 .owl-dot.owl-active{
-    border: 2px solid #8bbc07 !important; 
+    border: 2px solid rgb(213 0 0) !important; 
 }
 .owl-dot{
     width: 1rem !important;
@@ -360,14 +387,14 @@ header{
     position: absolute;
     width: 5px;
     height: 5px;
-    background-color: #8bbc07;
+    background-color: rgb(0 42 162);
     border-radius: 50%;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
 }
 .slider-text{
-    padding: 50px;
+    padding: 10px 50px 50px 50px;
 }
 .slider-text h2{
     font-size: 19px;
@@ -393,7 +420,7 @@ header{
     transition: .3s;
 }
 .owl-prev:hover, .owl-next:hover{
-    background-color: #98f443 !important;
+    background-color: rgb(213 0 0) !important;
 }
 .owl-prev i, .owl-next i{
     font-size: 30px;
@@ -549,10 +576,10 @@ header{
 
 .btns a:last-child{
     padding: 12px 24px;
-    background-color: #fff;
-    border: 1px solid #fff;
+    background-color: rgb(213 0 0);
+    border: 1px solid  rgb(213 0 0);
     font-size: 18px;
-    color: #000;
+    color: #fff;
 }
             /* Footer section */
 #footer{
@@ -584,7 +611,7 @@ header{
     padding: 0 18px;
 }
 .first{
-    padding: 0 0 0 0 !important;
+    padding: 0 18px 0 0 !important;
 }
 .footer-connect{
     margin: 37px 0 20px 0;
@@ -600,7 +627,7 @@ header{
 }
 .footer-connect i{
     font-size: 28px;
-    color: #669ad6;
+    color: rgb(213 0 0);
     margin-right: 10px;
 }
 .footer-phone, .footer-mail, .footer-loc{
@@ -613,7 +640,24 @@ header{
     padding: 20px 0 10px 0;
     color: #acacac;
 }
-
+.sub-wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sub-wrapper a{
+    color: white;
+    font-size: 12px;
+    line-height: 2.3;
+    font-weight: 400;
+}
+.sub-wrapper a:hover{
+    color:#fff;
+}
+.sub-wrapper a img:hover{
+    filter: grayscale(100%);
+}
         /* Hamburger Menu */
     
 .hamburger-menu{
@@ -716,7 +760,23 @@ textarea{
     background-color: #fff;
     font-size: 24px;
 }
+@media only screen and (max-width:1200px){
+    .fixed .flags{
+        left: 0;
+    }
+}
 @media only screen and (max-width:991px){
+    .fixed .navbar-brand img{
+        filter: none;
+
+    }
+    .navbar-brand img{
+        filter: grayscale(100) brightness(100) ;
+    }
+    .modal{
+        position: absolute !important;
+        z-index: 999999999 !important;
+    }
     header{
         height: 86px;
     }
@@ -733,7 +793,7 @@ textarea{
         background-color: #fff;
         height: 100vh;
         width: 70%;
-        padding: 35px;
+        padding: 35px 35px 35px 0;
         margin-left: auto;
         transform: translateX(200%);
     }
@@ -748,6 +808,15 @@ textarea{
         border-bottom: 1px solid rgba(0,0,0,0.14);
         color: #454749;
         display: flex;
+        display: flex;
+        
+    }
+    .mobile-menu ul li:last-child{
+        width: 100%;
+    }
+    .mobile-menu ul li:last-child .nav-btn{
+        display: flex;
+        justify-content: center;
     }
     .hamburger-menu{
         display: flex;
@@ -774,7 +843,7 @@ textarea{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100px;
+        width: 140px;
         height: 10px;
         padding: 17px 5px;
         margin: 0 auto;
@@ -817,6 +886,9 @@ textarea{
         align-items: center;
         justify-content: center;
     }
+    .sub-footer,.slider-heading h2{
+        text-align: center;
+    }
 }
 @media only screen and (max-width:1024px){
    .footer-wrapper img{
@@ -856,7 +928,7 @@ textarea{
         top: 20%;
     }
     .slider-text{
-        padding: 10px;
+        padding: 20px;
     }
 
 
@@ -921,7 +993,7 @@ textarea{
         margin: 10px 0;
     }
     .owl-prev{
-        left: -10px;
+        left: 0px;
     }
     .owl-next{
         right: 15px;
@@ -938,6 +1010,9 @@ textarea{
     .about-text h2{
         font-size: 30px;
     }
+    .mobile-menu ul li a{
+        font-size: 19px;
+    }
 }
 @media only screen and (max-width:425px){
     .about-text{
@@ -947,13 +1022,13 @@ textarea{
         left: 80%;
     }
     .owl-prev{
-        left: -7px;
+        left: 14px;
     }
     .carousel-text h1{
         padding-bottom: 4px;
     }
     .slider-text{
-        padding: 25px;
+        padding: 40px;
     }
     .call-text{
         width: 87%;
