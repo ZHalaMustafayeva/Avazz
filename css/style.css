@@ -824,7 +824,7 @@ textarea{
     #footer{
         margin-bottom: 64px;
     }
-    #footer img{
+    #footer .sub-logo{
         width: 100%;
     }
     .mobile-overlay{
@@ -851,7 +851,7 @@ textarea{
     .mobile-flags div{
         cursor: pointer;
     }
-    #footer img{
+    #footer .sub-logo{
         width: 30%;
         margin: auto;
         display: flex;
@@ -1032,6 +1032,16 @@ textarea{
     }
     .call-text{
         width: 87%;
+        padding-left: 30px;
+    }
+    .footer-wrapper{
+        padding-left: 30px;
+    }
+    .sub-wrapper{
+        justify-content: center;
+    }
+    .referans-img{
+        width: 23%;
     }
    
 }
