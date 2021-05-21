@@ -42,7 +42,9 @@
 .fixed .navbar-brand img{
     width: 160px;
 }
-
+.fixed .navbar-brand img{
+    filter: none;
+}
 .fixed .flags{    
     left: 0;
     top: 17%;
@@ -167,6 +169,9 @@ header{
 }
 .carousel-item img{
     object-fit: cover;
+}
+.navbar-brand img{
+    filter: grayscale(100) brightness(100);
 }
 .nav-item .nav-link{
     font-size: 15px;

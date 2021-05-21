@@ -112,7 +112,6 @@ $(document).ready(function () {
     $(".mobile-overlay").click(function () {
         if ($('header').hasClass('fixed') == true) {
             $('header').removeClass('fixed');
-            $('.navbar-brand img').css('filter', 'none');
             $('.humb').addClass('white');
             $('.humb').remove('black');
             $('.navbar-brand img').addClass('grayscale');
