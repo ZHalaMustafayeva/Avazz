@@ -40,9 +40,6 @@
     color: #000;
 }
 .fixed .navbar-brand img{
-    width: 160px;
-}
-.fixed .navbar-brand img{
     filter: none;
 }
 .fixed .flags{    
@@ -157,7 +154,7 @@ header{
     height: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0,.43);
+    background-color: rgba(0, 0, 0,.3);
     z-index: 1;
 }
 .carousel-indicators{
@@ -171,6 +168,7 @@ header{
     object-fit: cover;
 }
 .navbar-brand img{
+    width: 98px;
     filter: grayscale(100) brightness(100);
 }
 .nav-item .nav-link{
@@ -349,7 +347,7 @@ header{
     justify-content: center;
 }
 .about-text a{
-    background-color: #8bbc07;
+    background-color: rgb(16 224 60);
     color: #fff;
     padding: 16px 32px;
     border-radius: 48px;
@@ -376,7 +374,7 @@ header{
     padding:15px 0
 }
 .owl-dot.owl-active{
-    border: 2px solid rgb(213 0 0) !important; 
+    border: 2px solid rgb(16 224 60) !important; 
 }
 .owl-dot{
     width: 1rem !important;
@@ -392,7 +390,7 @@ header{
     position: absolute;
     width: 5px;
     height: 5px;
-    background-color: rgb(0 42 162);
+    background-color: rgb(213 0 0);
     border-radius: 50%;
     left: 50%;
     top: 50%;
@@ -425,7 +423,7 @@ header{
     transition: .3s;
 }
 .owl-prev:hover, .owl-next:hover{
-    background-color: rgb(213 0 0) !important;
+    background-color:rgb(16 224 60) !important;
 }
 .owl-prev i, .owl-next i{
     font-size: 30px;
@@ -519,7 +517,7 @@ header{
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.59);
+    background: rgba(0, 0, 0, 0.3);
 }
 .services-title{
     flex-direction: column;
@@ -554,7 +552,7 @@ header{
         /* Call to action */
 
 #call-to-action{
-    width: 100vw;
+    width: 100%;
 }
 .call-wrapper{
     background: url('../img/call.png') no-repeat;
@@ -564,7 +562,7 @@ header{
 .call-wrapper::before{
     content: '';
     position: absolute;
-    background-color: #00489686;
+    background-color: #10e03d65;
     left: 0;
     top: 0;
     width: 100%;
@@ -589,10 +587,10 @@ header{
             /* Footer section */
 #footer{
     padding: 45px 0 0 0;
-    background-color: #333;
+    background-color: #acacac;
 }
 .footer-wrapper{
-    border-bottom: 1px solid #acacac;
+    border-bottom: 1px solid #333;
 }
 .footer-list{
     padding-left: 0;
@@ -611,7 +609,7 @@ header{
     border-right: 1px solid #4d4d4d;
 }
 .footer-list li a{
-    color: #acacac;
+    color: #fff;
     text-transform: none;
     padding: 0 18px;
 }
@@ -626,13 +624,13 @@ header{
     line-height: 1;
 }
 .footer-connect p{
-    color: #acacac;
+    color: #fff;
     font-size: 15px;
     transform: translateY(50%);
 }
 .footer-connect i{
     font-size: 28px;
-    color: rgb(213 0 0);
+    color:#10e03c;
     margin-right: 10px;
 }
 .footer-phone, .footer-mail, .footer-loc{
@@ -829,8 +827,9 @@ textarea{
     #footer{
         margin-bottom: 64px;
     }
-    #footer .sub-logo{
-        width: 100%;
+    #footer a img{
+        width: 100px;
+        margin-bottom: 30px;
     }
     .mobile-overlay{
         position: absolute;
@@ -856,8 +855,8 @@ textarea{
     .mobile-flags div{
         cursor: pointer;
     }
-    #footer .sub-logo{
-        width: 30%;
+    .footer-logo a img{
+        width: 100%;
         margin: auto;
         display: flex;
         padding: 30px 0;
