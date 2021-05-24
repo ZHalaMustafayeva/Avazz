@@ -303,7 +303,7 @@ header{
     margin: 0 auto;
 }
 .referans-img{
-    width: 130px;
+    width: 20%;
     padding: 25px 0;
     margin-right: 40px;
 }
@@ -659,6 +659,9 @@ header{
 }
 .sub-wrapper a img:hover{
     filter: grayscale(100%);
+}
+.footer-logo{
+    text-align: center;
 }
         /* Hamburger Menu */
     

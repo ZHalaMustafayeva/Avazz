@@ -75,9 +75,6 @@ $(document).ready(function () {
         $('.hamburger-menu').toggleClass('active-humb');
         if ($('.hamburger-menu').hasClass('active-humb')) {
             $('header').addClass('fixed')
-            $('.navbar-brand img').addClass('filter')
-            $('.navbar-brand img').remove('grayscale')
-
             $('.mobile-overlay').css({
                 transition: '.5s',
                 'opacity':1,
@@ -94,8 +91,6 @@ $(document).ready(function () {
             $('.humb').addClass('white')
             $('.humb').remove('black')
             $('header').removeClass('fixed')
-            $('.navbar-brand img').remove('filter')
-            $('.navbar-brand img').addClass('grayscale')
             $('.mobile-overlay').css({
                 transition: '.4s',
                 'opacity':0,
@@ -114,15 +109,10 @@ $(document).ready(function () {
             $('header').removeClass('fixed');
             $('.humb').addClass('white');
             $('.humb').remove('black');
-            $('.navbar-brand img').addClass('grayscale');
-            $('.navbar-brand img').remove('filter');
         }
         else if ($('header').css('background', 'white') == true) {
-            $('.navbar-brand img').css('filter', 'grayscale(100) brightness(100)');
             $('.humb').addClass('black');
             $('.humb').remove('white');
-            $('.navbar-brand img').remove('grayscale');
-            $('.navbar-brand img').addClass('filter');
         }
         $('.hamburger-menu').removeClass('active-humb');
         $('.mobile-overlay').css({
